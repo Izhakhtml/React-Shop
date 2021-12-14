@@ -8,9 +8,9 @@ import './App.css';
 function App() {
   return (
   <div>
-      {/* <Logo/> */}
-      {/* <Vegetable/> */}
-      <CannedFood/>
+      <Logo/>
+      <Vegetable/>
+      {/* <CannedFood/> */}
        {/* <Spice/> */}
   </div>
   );

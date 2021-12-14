@@ -6,8 +6,10 @@ class Spice extends React.Component{
     this.bindName = this.ChangeName.bind(this)
     }
     ChangeName(e){
-    this.setState({spice:this.state.spice = e.target.parentElement.children[2].value})
-    this.setState({array:this.state.array =this.state.spice})   
+        this.setState({spice:this.state.spice = e.target.parentElement.children[2].value})
+        this.setState({array:this.state.array = this.state.spice});
+        let listId = document.getElementById("ul_list")
+        listId.innerHTML+=`<li>${this.state.array}</li>`    
     }
     render(){
         return(
@@ -16,9 +18,8 @@ class Spice extends React.Component{
                 <h3 id="vegetable_title">{this.state.spice}</h3>
                 <input type="text"/>
                 <button onClick={this.bindName}>Send</button>
-                  <ul>
-                    <li>{this.state.array}</li>
-                  </ul>
+                <ul id="ul_list"></ul>
+                  
             </div>
         )
     }
