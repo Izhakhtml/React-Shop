@@ -14,9 +14,9 @@ class Spice extends React.Component{
     render(){
         return(
             <div>
-                <h2 id="second_title">Add Spices</h2>
+                <h2 id="four_title">Add Spices</h2>
                 <h3 id="vegetable_title">{this.state.spice}</h3>
-                <input type="text"/>
+                <input type="text"id="input3"/>
                 <button onClick={this.bindName}>Send</button>
                 <ul id="ul_list"></ul>
                   

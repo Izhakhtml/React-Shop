@@ -18,7 +18,7 @@ class Vegetable extends React.Component{
             <div >
                 <h2 id="second_title">Add Vegetables</h2>
                 <h3 id="vegetable_title">{this.state.vegetable}</h3>
-                <input type="text"/>
+                <input type="text"id="input"/>
                 <button onClick={this.bindName}>Send</button>
                 <ul id="ul_list"></ul>
             </div>
