@@ -9,9 +9,9 @@ function App() {
   return (
   <div>
       <Logo/>
-      <Vegetable/>
+      {/* <Vegetable/> */}
       {/* <CannedFood/> */}
-       {/* <Spice/> */}
+       <Spice/>
   </div>
   );
 }

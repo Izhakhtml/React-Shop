@@ -6,9 +6,10 @@ class Vegetable extends React.Component{
     this.bindName = this.ChangeName.bind(this)
     }
     ChangeName(e){
-    this.setState({vegetable:this.state.vegetable = e.target.parentElement.children[2].value})
-    this.setState({array:this.state.array = `${this.state.vegetable}`});
     let listId = document.getElementById("ul_list")
+    let inputValue = document.getElementById("input")
+    this.setState({vegetable:this.state.vegetable = inputValue.value})
+    this.setState({array:this.state.array = `${this.state.vegetable}`});
     listId.innerHTML+=`<li>${this.state.array}</li>`    
     }
     render(){

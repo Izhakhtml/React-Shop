@@ -6,9 +6,10 @@ class CannedFood extends React.Component{
     this.event = this.ChangeName.bind(this)
     }
     ChangeName(e){
-        this.setState({cannedFood:this.state.cannedFood = e.target.parentElement.children[2].value})
-        this.setState({array:this.state.array = this.state.cannedFood});
         let listId = document.getElementById("ul_list")
+        let inputValue = document.getElementById("input2")
+        this.setState({cannedFood:this.state.cannedFood = inputValue.value})
+        this.setState({array:this.state.array = this.state.cannedFood});
         listId.innerHTML+=`<li>${this.state.array}</li>`    
     }
     render(){

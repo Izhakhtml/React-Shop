@@ -6,9 +6,10 @@ class Spice extends React.Component{
     this.bindName = this.ChangeName.bind(this)
     }
     ChangeName(e){
-        this.setState({spice:this.state.spice = e.target.parentElement.children[2].value})
-        this.setState({array:this.state.array = this.state.spice});
         let listId = document.getElementById("ul_list")
+        let inputValue = document.getElementById("input3")
+        this.setState({spice:this.state.spice = inputValue.value})
+        this.setState({array:this.state.array = this.state.spice});
         listId.innerHTML+=`<li>${this.state.array}</li>`    
     }
     render(){
