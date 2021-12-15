@@ -2,7 +2,7 @@
   text-align: center;
 }
 body{
-  background: rgb(122, 88, 88);
+  background: rgb(165, 110, 110);
 }
 #main_title{
   margin-left: 30%;
@@ -44,3 +44,15 @@ body{
 #vegetable_title{
   margin-left: 45%;
 }
+/* #vegetable_div{
+  border: 2px black solid;
+  margin: 5px;
+}
+#cannedfood_div{
+  border: 2px black solid;
+  margin: 5px;
+}
+#spice_div{
+  border: 2px black solid;
+  margin: 5px;
+} */

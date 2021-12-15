@@ -4,22 +4,29 @@ class CannedFood extends React.Component{
     super(props)
     this.state ={cannedFood:"",array:[]}
     this.event = this.ChangeName.bind(this)
+    this.counter=0
     }
-    ChangeName(e){
-        let listId = document.getElementById("ul_list")
-        let inputValue = document.getElementById("input2")
-        this.setState({cannedFood:this.state.cannedFood = inputValue.value})
-        this.setState({array:this.state.array = this.state.cannedFood});
-        listId.innerHTML+=`<li>${this.state.array}</li>`    
+    ChangeName(event){
+        let eventValue = event.target.parentElement.children[2].value;
+        this.setState({cannedFood:this.state.cannedFood = eventValue})
+        this.state.array.push(this.state.vegetable)
+        //! second way
+        // document.getElementById("ul_list2").innerHTML+=`<li>${this.state.array[this.counter]}</li>`
+        // this.counter++   
     }
     render(){
         return(
-            <div>
+            <div id="cannedfood_div">
                 <h2 id="three_title">Add CannedFood</h2>
                 <h3 id="vegetable_title">{this.state.cannedFood}</h3>
                 <input type="text"id="input2" />
                 <button onClick={this.event}>Send</button>
-                <ul id="ul_list"></ul>
+                <ul id="ul_list2" className="ul_list">
+                {
+                    //! first way
+                    this.state.array.map((item)=> <li>{item}</li>  )
+                }
+                </ul>
             </div>
         )
     }
