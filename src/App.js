@@ -1,5 +1,5 @@
 import logo from './logo.svg';
-import Logo from './components/Timer/vegetable';
+import Logo from './components/Timer/Logo';
 import Vegetable from './components/Timer/VegetableComponent';
 import CannedFood from './components/Timer/CannedFoof';
 import Spice from './components/Timer/Spice';
@@ -15,5 +15,4 @@ function App() {
   </div>
   );
 }
-
 export default App;
